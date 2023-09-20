@@ -1,0 +1,11 @@
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 229, 235);
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,185 @@
+.profile-card {
+  height: 200px;
+  width: 1100px;
+  border: 3px solid rgb(172, 183, 197);
+  background-color: rgb(246, 249, 251);
+  padding: 5px;
+  display: flex;
+}
+.profile-card .profile-image-section {
+  height: 200px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card .profile-image-section .profile_image {
+  height: 180px;
+  width: 150px;
+}
+.profile-card .profile-image-section .rating {
+  color: rgb(202, 113, 202);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card .profile-image-section .rating .star {
+  font-size: large;
+  font-weight: bolder;
+  margin-top: -15px;
+}
+.profile-card .profile-image-section .rating .word {
+  margin-top: -15px;
+}
+.profile-card .profile-details-section {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 1000px;
+  margin-top: -5px;
+  padding: 5px;
+}
+.profile-card .profile-details-section .details-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-card .profile-details-section .details-header .profile-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+  display: flex;
+  gap: 10px;
+}
+.profile-card .profile-details-section .details-header .profile-name .name {
+  font-size: x-large;
+  font-weight: bolder;
+}
+.profile-card .profile-details-section .details-header .profile-name .span {
+  font-weight: bolder;
+  color: gray;
+}
+.profile-card .profile-details-section .details-header .profile-name .span .five {
+  font-size: x-large;
+}
+.profile-card .profile-details-section .details-header .stars {
+  margin-left: -150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card .profile-details-section .details-header .stars .allstars {
+  margin-top: 5px;
+}
+.profile-card .profile-details-section .details-header .stars .allstars .s1, .profile-card .profile-details-section .details-header .stars .allstars .s2, .profile-card .profile-details-section .details-header .stars .allstars .s3, .profile-card .profile-details-section .details-header .stars .allstars .s4 {
+  padding: 2px;
+  border-radius: 10px;
+}
+.profile-card .profile-details-section .details-header .stars .allstars .s1 {
+  background-color: pink;
+}
+.profile-card .profile-details-section .details-header .stars .allstars .s2 {
+  background-color: yellow;
+}
+.profile-card .profile-details-section .details-header .stars .allstars .s3 {
+  background-color: lightgray;
+}
+.profile-card .profile-details-section .details-header .stars .allstars .s4 {
+  background-color: lightgreen;
+}
+.profile-card .profile-details-section .details-header .stars .star-award {
+  margin-top: -8px;
+  color: rgb(247, 159, 173);
+}
+.profile-card .profile-details-section .details-header .edit-section {
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: -10px;
+  border-radius: 20px;
+  background-color: darkorchid;
+  color: white;
+}
+.profile-card .profile-details-section .details-hero .ptag1 {
+  font-weight: bold;
+  margin-top: -10px;
+  color: rgb(202, 113, 202);
+}
+.profile-card .profile-details-section .details-hero .ptag2 {
+  font-weight: bold;
+  margin-top: -15px;
+  color: gray;
+  font-size: 16px;
+}
+.profile-card .profile-details-section .details-hero .subjects {
+  color: rgb(202, 113, 202);
+  margin-top: -25px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile-card .profile-details-section .details-hero .subjects .sci, .profile-card .profile-details-section .details-hero .subjects .ma, .profile-card .profile-details-section .details-hero .subjects .hi {
+  font-weight: bold;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: -1rem;
+  padding-bottom: -1rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profile-card {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 975px) {
+  .profile-card {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .profile-card .profile-details-section {
+    width: 450px;
+  }
+  .profile-card .profile-details-section .details-header .stars {
+    margin-left: -2px;
+  }
+}
+@media only screen and (max-width: 725px) {
+  .profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=Profile_Card.css.map */

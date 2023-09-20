@@ -1,0 +1,190 @@
+$txt-clr : rgb(202, 113, 202);
+@mixin flex_col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    height: 200px;
+    width: 1100px;
+    border: 3px solid rgb(172, 183, 197);
+    background-color:rgb(246, 249, 251);
+    padding: 5px   ;
+    display: flex;
+    .profile-image-section{
+        height: 200px;
+        width: 120px;
+        @include flex_col();
+        .profile_image{
+            height: 180px;
+            width: 150px;
+        }
+        .rating{
+            color: $txt-clr;
+            @include flex_col();
+            .star{
+                font-size: large;
+                font-weight: bolder;
+                margin-top: -15px;
+            }
+            .word{
+                margin-top: -15px;
+            }
+        }
+    }
+    .profile-details-section{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 1000px;
+        margin-top: -5px;
+        padding: 5px;
+        .details-header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .profile-name{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -5px;
+                .name{
+                    font-size: x-large;
+                    font-weight: bolder;
+                }
+                .span{
+                    font-weight: bolder;
+                    color: gray;
+                    .five{
+                        font-size: x-large;
+                    }
+                }
+                display: flex;
+                gap: 10px;
+            }
+            .stars{
+                margin-left: -150px;
+                @include flex_col();
+                    
+                .allstars{
+                    margin-top: 5px;
+                    .s1 ,.s2 , .s3 , .s4{
+                        padding: 2px;
+                        border-radius: 10px;
+                    }
+                    .s1{
+                        background-color: pink;
+                    }
+                    .s2{
+                        background-color: yellow;
+                    }
+                    .s3{
+                        background-color: lightgray;
+                    }
+                    .s4{
+                        background-color: lightgreen;
+                    }
+                }
+                .star-award{
+                    margin-top: -8px;
+                    color: rgb(247, 159, 173);
+                }
+            }
+            .edit-section{
+                height: 30px;
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                margin-top: -10px;
+                border-radius: 20px;
+                background-color: darkorchid;
+                color: white;
+            }
+        }
+        .details-hero{
+            
+            .ptag1{
+                font-weight: bold;
+                margin-top: -10px;
+                color: $txt-clr;
+            }
+            .ptag2{
+                font-weight: bold;
+                margin-top: -15px;
+                color: gray;
+                font-size: 16px;
+            }
+            .subjects{
+                color: $txt-clr;
+                margin-top: -25px;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .sci , .ma , .hi{
+                    font-weight: bold;
+                    padding-right: 1rem;
+                    padding-left: 1rem;
+                    padding-top: -1rem;
+                    padding-bottom: -1rem;
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1150px){
+    .profile-card{
+        width:800px;
+    }
+}
+@media only screen and (max-width:975px){
+    .profile-card{
+        width: fit-content;
+        .profile-details-section{
+            width: 450px;
+            .details-header{
+                .stars{
+                    margin-left: -2px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:725px){
+    .profile-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width:500px;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:630px){
+    .profile-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width:400px;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:512px){
+    .profile-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width:400px;
+        flex-wrap: wrap;
+        
+    }
+}
