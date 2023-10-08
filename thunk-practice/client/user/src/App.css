@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.actualdata{
+  width: max-content;
+margin: 100px auto;
+padding: 50px;
+  border: 2px solid green;
+  border-radius: 50px;
+display: grid;
+
+
+align-items: center;
+grid-template-columns: repeat(2,200px);
+grid-auto-flow: row;
+row-gap: 20px;
+}
